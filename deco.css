@@ -267,38 +267,8 @@ body{
     box-shadow: 3px 3px 3px rgb(73, 73, 73);
 }
 
-#reseaux{
-    top: 300px;
-    left: -450px;
-    width: 500px;
-    height: 200px;
-    position: absolute;
-    background-color: rgba(153, 153, 153, 0.945);
-}
 
-#discord{
-    position: relative;
-    size: contain;
-    width: auto;
-    height: auto;
-    max-height: 90%;
-    max-width: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
-    
-}
 
-#github{
-    position: relative;
-    size: contain;
-    width: auto;
-    height: auto;
-    max-height: 90%;
-    max-width: 40%;
-    margin-left:  10%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
 #github:hover{
     -webkit-filter: drop-shadow(0px 0px 5px #222);
@@ -306,45 +276,126 @@ body{
 }
 
 #discord:hover{
-    b-webkit-filter: drop-shadow(0px 0px 5px #222);
+    -webkit-filter: drop-shadow(0px 0px 5px #222);
     filter: drop-shadow(0px 0px 5px #222);
 }
 
-#reseaux:hover{
-    animation: showres 0.8s;
-    left: 0px;
-}
-
-#reseaux:not(:hover){
-    animation: hideres 0.1s;
-    left: -450px;
-}
-
-#textres{
+#github{
     position: absolute;
-    width: 10px;
+    max-width: 10%;
+    right: -7px;
+    bottom: 30px;
+    display:none;
+}
+
+#discord{
+    position: absolute;
+    max-width: 10%;
+    left: 345px;
+    top: -2px;
+    display: none;
+}
+
+#branches{
+    top:800px;
+    left: -15px;
+    width: 500px;
+    height: 174px;
+    
+    position: absolute;
+}
+
+#branchent{
+    position: absolute;
+    max-width: 100%;
     height: auto;
-    
-    font-size: 25px;
+    opacity: 0.2;
+    display: none;
+}
 
-    margin-top: auto;
-    margin-bottom: auto;
-    
-    right: 15px;
 
-    
-    display: inline-block;
+
+.branch{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    display: none;
     
 }
 
-@keyframes showres{
-    0% {left: -450px}
-    100%{left: 0px}
+
+#branches:hover #b1{
+    display: block;
+    animation: branche1 0.5s;
+}
+#branches:hover  #github{
+    display: block;
+    animation: github 0.5s;
+}
+#branches:hover  #discord{
+    display: block;
+    animation: discord 0.5s;
+}
+#branches:hover  #b2{
+    display: block;
+    animation: branche2 0.5s;
+}
+#branches:hover  #b3{
+    display: block;
+    animation: branche3 0.5s;
 }
 
-@keyframes hideres{
-    0% {left: 0px}
-    100%{left: -450px;}
+#branches:not(:hover)  #viseur{
+    display: block;
+    animation: viseur 0.5s;
+    
+}
+
+#branches:hover  #viseur{
+    display: none;
+    
+    
+}
+
+#viseur{
+    position: absolute;
+    top: 20px;
+    max-width: 100px;
+    height: auto;
+}
+
+@keyframes viseur{
+    0%{display: block; opacity: 0;}
+    100%{display: block; opacity: 1;}
+}
+@keyframes branche1{
+    0%{display: block; opacity: 0;}
+    100%{display: block; opacity: 100;}
+}
+
+@keyframes branche2{
+    0%{display: block; opacity: 0;}
+    20%{display: block; opacity: 0;}
+    100%{display: block; opacity: 100;}
+}
+
+@keyframes branche3{
+    0%{display: block; opacity: 0;}
+    40%{display: block; opacity: 0;}
+    100%{display: block; opacity: 100;}
+}
+
+
+@keyframes github{
+    0%{display: block; opacity: 0;}
+    60%{display: block; opacity: 0;}
+    100%{display: block; opacity: 100;}
+}
+
+@keyframes discord{
+    0%{display: block; opacity: 0;}
+    80%{display: block; opacity: 0;}
+    100%{display: block; opacity: 100;}
 }
 
 /*aaa*/
