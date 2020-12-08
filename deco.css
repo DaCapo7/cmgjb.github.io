@@ -1,401 +1,407 @@
-
-body{
-    background-image: url("imgs/background.png");
-    /*background-repeat: no-repeat;
+body {
+  background-image: url("imgs/background.png");
+  /*background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     background-attachment:scroll;*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-
-*:not('#bienvenue'){
-    font-family: 'Inconsolata', monospace;
+*:not("#bienvenue") {
+  font-family: "Inconsolata", monospace;
 }
 
-
-#grid-container{
-    background-color: rgba(226, 226, 226, 0.895);
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    overflow: auto;
+#grid-container {
+  background-color: rgba(226, 226, 226, 0.895);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  overflow: auto;
 }
 
-.bienvenue{
-    grid-column-start: 1;
-    grid-column-end: 6;
-    padding: 5px;
-    text-align: center;
-    font-size: 40px;
-    background-color: rgba(255, 255, 255, 0.466);
-    margin-top: 40px;
-    
+.bienvenue {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  padding: 5px;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.466);
+  margin-top: 40px;
 }
 
-
-#grid1{
-    margin: 30px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+#grid1 {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
-#text1{
-    /*grid-column: 1;*/
+#text1 {
+  /*grid-column: 1;*/
 
-    height: 400px;
-    font-size: 20px;
-    text-align: justify;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.568);
-    border: 1px solid rgb(121, 121, 121);
-    border-radius: 3px;
+  height: 400px;
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.568);
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 3px;
 
-    overflow: auto;
-    
+  overflow: auto;
 }
-#text1:hover{
-    
-        box-shadow: 1px 1px 3px black;
-
+#text1:hover {
+  box-shadow: 1px 1px 3px black;
 }
-#panneau{
-    /*grid-column: 2;*/
-    box-shadow: 3px 3px 4px black;
-    height: 420px;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
+#panneau {
+  /*grid-column: 2;*/
+  box-shadow: 3px 3px 4px black;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
 }
 
-#imageentre1{
-    height: auto;
-    width: 95%;
-    margin: 2.5%;
-    box-shadow: 2px 2px 3px black;
+#imageentre1 {
+  height: auto;
+  width: 95%;
+  margin: 2.5%;
+  box-shadow: 2px 2px 3px black;
 }
 
-#entre1{
-    width: 100%;
-    height: auto;
+#entre1 {
+  width: 100%;
+  height: auto;
 }
 
-#grid2{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 30px;
-    
-    
-    width: 95%;
+#grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
 
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+  width: 95%;
+
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
-#text2{
-    
+#text2 {
+  height: 80%;
+  width: 90%;
 
-    height: 80%;
-    width: 90%;
+  font-size: 20px;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.568);
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 3px;
+  text-align: justify;
+  padding: 3%;
 
-    font-size: 20px; 
-    overflow: auto;
-    background-color: rgba(255, 255, 255, 0.568);
-    border: 1px solid rgb(121, 121, 121);
-    border-radius: 3px;
-    text-align: justify;
-    padding: 3%;
-
-    margin: auto;
-
+  margin: auto;
 }
 
-#text2:hover{
-    box-shadow: 2px 2px 3px black;
+#text2:hover {
+  box-shadow: 2px 2px 3px black;
 }
 
-#tablediv{
-    
-    
-    margin: auto 0%;
+#tablediv {
+  margin: auto 0%;
 }
 
-
-
-#table{
-    width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 3px black;
+#table {
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 3px black;
 }
 
-#titlevp{
-    font-size: 50px;
-    background-color: rgba(255, 255, 255, 0.466);
-    margin-top: 40px;
-    padding: 10px;
-    text-align: center;
+#titlevp {
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0.466);
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
 }
 
-
-
-
-#slideshow{
-    height: 600px;
-    background-color: rgba(26, 26, 26, 0.705);
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 90% 10%;
-    grid-template-rows: 600px;
+#slideshow {
+  height: 600px;
+  background-color: rgba(26, 26, 26, 0.705);
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 600px;
 }
 
-
-
-#nextimg{
-    position: relative;
-    height: 50px;
-    width: auto;
-    
+#nextimg {
+  position: relative;
+  height: 50px;
+  width: auto;
 }
 
-#next.active.focus, #next.active:focus,
-#next.focus, #next:active.focus, 
-#next:active:focus, #next:focus {
+#next.active.focus,
+#next.active:focus,
+#next.focus,
+#next:active.focus,
+#next:active:focus,
+#next:focus {
   outline: none;
   box-shadow: none;
-  background-color:none;
+  background-color: none;
 }
 
 /*#next:active > */
 
-#nextimg:active{
-    position: relative;
-    top: -2.5px;
-    left: -2.5px;
-    
-    filter: drop-shadow(2.5px 2.5px 4px rgb(0, 0, 0));
+#nextimg:active {
+  position: relative;
+  top: -2.5px;
+  left: -2.5px;
+
+  filter: drop-shadow(2.5px 2.5px 4px rgb(0, 0, 0));
 }
 
-#buttoncont{
-    width: 50%;
-    height: auto;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    
+#buttoncont {
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-#next{
-    
+#next {
+  grid-column: 2;
 
-
-    grid-column: 2;
-
-    border: none;
-    background: none;
-
-    
-    
+  border: none;
+  background: none;
 }
 
-#slidecont{
-    grid-column: 1;
-    width: 100%;
-    height: 100%;
-    
-    position: relative;
+#slidecont {
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
 }
 
+#slideimg {
+  max-height: 90%;
+  max-width: 90%;
+  width: auto;
+  height: auto;
 
-
-#slideimg{
-    
-    max-height: 90%;
-    max-width: 90%;
-    width: auto;
-    height: auto;
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-#direction{
-    display: inline-block;
-    
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    background-color: rgb(226, 211, 0);
-    border: 3px solid rgb(0, 204, 0);
-    border-radius: 15px;
+#direction {
+  display: inline-block;
+
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(226, 211, 0);
+  border: 3px solid rgb(0, 204, 0);
+  border-radius: 15px;
 }
 
-#direction:hover{
-    background-color: rgb(202, 189, 0);
-    border: 3px solid rgb(0, 168, 0);
+#direction:hover {
+  background-color: rgb(202, 189, 0);
+  border: 3px solid rgb(0, 168, 0);
 }
-#direction:active{
-    border: 4px solid rgb(0, 0, 0);
-}
-
-.uno{
-    list-style-type: none;
-    background-color: rgba(255, 255, 255, 0.753);
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    margin: 5%;
-    border: 2px solid rgb(168, 168, 168);
-    border-radius: 15px;
+#direction:active {
+  border: 4px solid rgb(0, 0, 0);
 }
 
-.uno:hover{
-    box-shadow: 3px 3px 3px rgb(73, 73, 73);
+.uno {
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.753);
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 5%;
+  border: 2px solid rgb(168, 168, 168);
+  border-radius: 15px;
 }
 
+.uno:hover {
+  box-shadow: 3px 3px 3px rgb(73, 73, 73);
+}
 
-
-
-#github:hover{
-    -webkit-filter: drop-shadow(0px 0px 5px #222);
+#github:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px #222);
   filter: drop-shadow(0px 0px 5px #222);
 }
 
-#discord:hover{
-    -webkit-filter: drop-shadow(0px 0px 5px #222);
-    filter: drop-shadow(0px 0px 5px #222);
+#discord:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px #222);
+  filter: drop-shadow(0px 0px 5px #222);
 }
 
-#github{
-    position: absolute;
-    max-width: 10%;
-    right: -7px;
-    bottom: 30px;
-    display:none;
+#github {
+  position: absolute;
+  max-width: 10%;
+  right: -7px;
+  bottom: 30px;
+  display: none;
 }
 
-#discord{
-    position: absolute;
-    max-width: 10%;
-    left: 345px;
-    top: -2px;
-    display: none;
+#discord {
+  position: absolute;
+  max-width: 10%;
+  left: 345px;
+  top: -2px;
+  display: none;
 }
 
-#branches{
-    top:800px;
-    left: -15px;
-    width: 500px;
-    height: 174px;
-    
-    position: absolute;
+#branches {
+  top: 800px;
+  left: -15px;
+  width: 500px;
+  height: 174px;
+
+  position: absolute;
 }
 
-#branchent{
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    opacity: 0.2;
-    display: none;
+#branchent {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.2;
+  display: none;
 }
 
-
-
-.branch{
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    display: none;
-    
+.branch {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  display: none;
 }
 
+#branches:hover #b1 {
+  display: block;
+  animation: branche1 0.5s;
+}
+#branches:hover #github {
+  display: block;
+  animation: github 0.5s;
+}
+#branches:hover #discord {
+  display: block;
+  animation: discord 0.5s;
+}
+#branches:hover #b2 {
+  display: block;
+  animation: branche2 0.5s;
+}
+#branches:hover #b3 {
+  display: block;
+  animation: branche3 0.5s;
+}
 
-#branches:hover #b1{
+#branches:not(:hover) #viseur {
+  display: block;
+  animation: viseur 0.5s;
+}
+
+#branches:hover #viseur {
+  display: none;
+}
+
+#viseur {
+  position: absolute;
+  top: 20px;
+  max-width: 100px;
+  height: auto;
+}
+
+@keyframes viseur {
+  0% {
     display: block;
-    animation: branche1 0.5s;
-}
-#branches:hover  #github{
+    opacity: 0;
+  }
+  100% {
     display: block;
-    animation: github 0.5s;
+    opacity: 1;
+  }
 }
-#branches:hover  #discord{
+@keyframes branche1 {
+  0% {
     display: block;
-    animation: discord 0.5s;
-}
-#branches:hover  #b2{
+    opacity: 0;
+  }
+  100% {
     display: block;
-    animation: branche2 0.5s;
+    opacity: 100;
+  }
 }
-#branches:hover  #b3{
+
+@keyframes branche2 {
+  0% {
     display: block;
-    animation: branche3 0.5s;
-}
-
-#branches:not(:hover)  #viseur{
+    opacity: 0;
+  }
+  20% {
     display: block;
-    animation: viseur 0.5s;
-    
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 100;
+  }
 }
 
-#branches:hover  #viseur{
-    display: none;
-    
-    
+@keyframes branche3 {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  40% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 100;
+  }
 }
 
-#viseur{
-    position: absolute;
-    top: 20px;
-    max-width: 100px;
-    height: auto;
+@keyframes github {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 100;
+  }
 }
 
-@keyframes viseur{
-    0%{display: block; opacity: 0;}
-    100%{display: block; opacity: 1;}
-}
-@keyframes branche1{
-    0%{display: block; opacity: 0;}
-    100%{display: block; opacity: 100;}
-}
-
-@keyframes branche2{
-    0%{display: block; opacity: 0;}
-    20%{display: block; opacity: 0;}
-    100%{display: block; opacity: 100;}
-}
-
-@keyframes branche3{
-    0%{display: block; opacity: 0;}
-    40%{display: block; opacity: 0;}
-    100%{display: block; opacity: 100;}
-}
-
-
-@keyframes github{
-    0%{display: block; opacity: 0;}
-    60%{display: block; opacity: 0;}
-    100%{display: block; opacity: 100;}
-}
-
-@keyframes discord{
-    0%{display: block; opacity: 0;}
-    80%{display: block; opacity: 0;}
-    100%{display: block; opacity: 100;}
+@keyframes discord {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  80% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 100;
+  }
 }
 
 /*aaa*/
