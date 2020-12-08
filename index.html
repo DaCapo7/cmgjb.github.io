@@ -272,7 +272,7 @@
       function verify() {
         var a;
         a = window.orientation.type;
-        if (screen.height>screen.width) {
+        if (window.matchMedia("(orientation: portrait)").matches) {
           console.log("port");
           document.getElementById("hidder").style.display = "block";
         } else {
