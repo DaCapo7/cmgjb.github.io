@@ -6,9 +6,7 @@ var i;
 var mybutton;
 var avant;
 
-function getRandomBetween(min, max) {
-  return Math.random() * (max - min) + min;
-}
+
 
 window.onload = function () {
   slideshow = document.getElementById("slideshow");
@@ -37,7 +35,6 @@ window.onload = function () {
     "imgs/rivieretsoleil1.jpeg",
     "imgs/rivieretsoleil2.jpeg",
     "imgs/tables.jpeg",
-
     "imgs/vueavecsoleil1.jpeg",
     "imgs/vueensemble1.jpeg",
   ];
@@ -56,3 +53,9 @@ function afterload() {
     i = i % 20;
   });
 }
+
+var parralax = function(){
+  document.getElementsByTagName('body')[0].style.backgroundPositionY = '-'+String(scrollY/4)+'px'
+}
+
+window.addEventListener('scroll', parralax)
